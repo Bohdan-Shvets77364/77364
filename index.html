@@ -1,130 +1,84 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Bohdan Shvets</title>
-    <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-            line-height: 1.5;
-            max-width: 800px;
-            margin: 20px auto;
-            color: black;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.2em;
-            margin-bottom: 5px;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 25px;
-            border-bottom: 1px solid black;
-            padding-bottom: 3px;
-        }
-        h3 {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
-        section {
-            margin-bottom: 25px;
-        }
-        article {
-            margin-bottom: 15px;
-        }
-        img {
-            width: 150px;
-            height: auto;
-            margin-bottom: 15px;
-            display: block;
-        }
-        ul, ol {
-            margin-top: 5px;
-        }
-        footer {
-            margin-top: 50px;
-            font-size: 0.8em;
-            color: #555;
-            border-top: 1px solid #ccc;
-            padding-top: 10px;
-        }
-        a {
-            color: blue;
-            text-decoration: underline;
-        }
-    </style>
+    <title>BMW M-Performance | Custom Wheels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Кастомний курсор -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <header>
-        <img src="myphoto.jpg" alt="Zdjęcie profilowe: Bohdan Shvets">
-        <h1>Bohdan Shvets</h1>
+    <header id="navbar">
+        <a href="#" class="brand-logo">M-POWER</a>
+        <nav>
+            <a href="#hero">Головна</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#contact">Замовити</a>
+        </nav>
     </header>
 
     <main>
-        <section id="kontakt">
-            <h2>Kontakt</h2>
-            <p>E-mail: <a href="mailto:bshvets1@stu.vistula.edu.pl">bshvets1@stu.vistula.edu.pl</a></p>
-            <p>Telefon: <a href="tel:+48576661689">+48 576 661 689</a></p>
-            <p>Miasto: Warszawa</p>
-            
-            <p>GitHub: <a href="https://github.com/Bohdan-Shvets77364" target="_blank" rel="noopener noreferrer">github.com/Bohdan-Shvets77364</a></p>
-            <p>Telegram: <a href="https://t.me/BohdanShvetss" target="_blank" rel="noopener noreferrer">@BohdanShvetss</a></p>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="АБСОЛЮТНИЙ КОНТРОЛЬ">АБСОЛЮТНИЙ КОНТРОЛЬ</h1>
+                <p>Ексклюзивна анатомія, справжній карбон та преміальна алькантара. Твій BMW заслуговує на краще.</p>
+                <a href="#catalog" class="btn-primary">Обрати дизайн</a>
+            </div>
         </section>
 
-        <section id="o-mnie">
-            <h2>O mnie</h2>
-            <p>Jestem studentem uczelni Vistula na kierunku Informatyka (2 semestr). Interesuję się programowaniem, szczególnie logiką backendową, i dążę do stałego podnoszenia swoich kompetencji technicznych.</p>
+        <section id="catalog" class="catalog-section">
+            <h2 class="section-title">ЕКСКЛЮЗИВНА КОЛЕКЦІЯ</h2>
+            <div class="grid-container">
+                <!-- Картка 1 -->
+                <div class="card hidden">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1605553579899-73e46c7cc897?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="card-info">
+                        <h3>F-Series M-Sport</h3>
+                        <p>Гладка Nappa, строчка M-Performance.</p>
+                        <span class="price">12 500 ₴</span>
+                    </div>
+                </div>
+                <!-- Картка 2 -->
+                <div class="card hidden">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="card-info">
+                        <h3>G-Series Forged Carbon</h3>
+                        <p>Кований карбон, LED-дисплей, перфорація.</p>
+                        <span class="price">26 000 ₴</span>
+                    </div>
+                </div>
+                <!-- Картка 3 -->
+                <div class="card hidden">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1550524514-cb9e69c258d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="card-info">
+                        <h3>Track Edition Alcantara</h3>
+                        <p>Повна алькантара, червона нульова мітка.</p>
+                        <span class="price">15 200 ₴</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="umiejetnosci">
-            <h2>Umiejętności</h2>
-            <ul>
-                <li>Podstawy języka C#</li>
-                <li>Tworzenie struktury stron w HTML5</li>
-                <li>Podstawy JavaScript</li>
-                <li>Obsługa systemu kontroli wersji Git</li>
-                <li>Zdolność analitycznego myślenia</li>
-            </ul>
-        </section>
-
-        <section id="doswiadczenie">
-            <h2>Doświadczenie</h2>
-            
-            <article>
-                <h3>Projekty akademickie – C#</h3>
-                <p><em>Vistula University | 2025</em></p>
-                <p>Tworzenie aplikacji konsolowych, nauka algorytmiki oraz podstawowych struktur danych w ramach toku studiów.</p>
-            </article>
-
-            <article>
-                <h3>Samokształcenie – Web Development</h3>
-                <p><em>2025 – obecnie</em></p>
-                <p>Rozwijanie umiejętności z zakresu technologii webowych (HTML, CSS) poprzez budowanie prostych stron internetowych.</p>
-            </article>
-        </section>
-
-        <section id="edukacja">
-            <h2>Edukacja</h2>
-            <p><strong>Akademia Finansów i Biznesu Vistula</strong></p>
-            <p>Kierunek: Informatyka (Studia stacjonarne)</p>
-            <p>Rok akademicki: 2025/2026</p>
-            <p>Numer albumu: 77364</p>
-        </section>
-
-        <section id="projekty">
-            <h2>Projekty</h2>
-            <ol>
-                <li><strong>Kalkulator C#</strong> – Program wykonujący operacje matematyczne stworzony w Visual Studio.</li>
-                <li><strong>Portfolio HTML</strong> – Moja pierwsza strona CV zrealizowana zgodnie ze standardami semantycznymi.</li>
-            </ol>
+        <section id="contact" class="contact-section hidden">
+            <div class="glass-panel">
+                <h2>ГОТОВІ ДО ЗМІН?</h2>
+                <p>Зв'яжіться з нами для індивідуального прорахунку вашого проекту.</p>
+                <div class="social-links">
+                    <a href="#" class="btn-outline">Instagram</a>
+                    <a href="#" class="btn-outline">Telegram</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Bohdan Shvets. Wszystkie prawa zastrzeżone.</p>
+        <p>&copy; 2024 BMW M-Performance Custom. Designed for speed.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-</html
+</html>
